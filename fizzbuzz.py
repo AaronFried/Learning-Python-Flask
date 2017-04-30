@@ -1,5 +1,12 @@
-n = 100
-print("Fizz buzz counting up to " + str(n))
+import sys
+
+
+if len(sys.argv) < 2:
+	n = int(input("Maximum fizz buzz counter: "))
+else:
+	n = int(sys.argv[1])
+	print("Working with {}".format(sys.argv[1]))
+	
 
 for count in range(1, n):
 	if count % 3 == 0 and count % 5 == 0:
