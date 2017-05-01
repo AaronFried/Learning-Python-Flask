@@ -56,7 +56,8 @@ if __name__ == "__main__":
 		elif want_a_drink == "y":
 			new_drink(find_preferences())
 		else:
-			print("Drive safe!")
+			print("\nDrive safe!")
+			break
 
 		
 
